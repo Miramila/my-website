@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Shizuru' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Oswald' rel='stylesheet'>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Review</title>
+  </head>
+  <body>
+    <header>
+        <a class="skip" href="#skip">Skip to Main Content</a>
+        <nav>
+            <ul>
+                <li><a href = "home.html" class = "active">Home</a></li>
+                <li><a href = "photography.html">Photography</a></li>
+                <li><a href = "games.html">Games Review</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="skip">
+        <h1>Games Review</h1>
+        <div class="controls">
+            <button type="button" class="control" data-filter="all">All</button>
+            <button type="button" class="control" data-filter=".green">Adventure</button>
+            <button type="button" class="control" data-filter=".blue">Shooter</button>
+            <button type="button" class="control" data-filter=".pink">Visual Novel</button>
+        </div>
+
+        <div class="container">
+            <div class="mix pink">
+                <div class="img__wrap">
+                <img class="img__img" src="./games_figure/pheonix.jpg" alt="phoenix attorney" width = 350px>
+                <div class="img__description">
+                    <p>
+                        Phoenix Wright: Ace Attorney <br>
+                        Rating: 5/5<br>
+                        <br>
+                        Go through different criminal trials with the main character.<br>
+                        
+                    </p>
+
+                </div>
+            </div>
+            </div>
+            <div class="mix pink">
+                <div class="img__wrap">
+                    <img class="img__img" src="./games_figure/dangaronpa.jpg" alt="Dangaronpa2" width = 350px>
+                    <div class="img__description">
+                        <p>
+                            Danganronpa 2: Goodbye Despair <br>
+                            Rating: 4.5/5<br>
+                            <br>
+                            Find out the truth of 6 different mysteries and escaped out of the school.<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mix blue">
+                <div class="img__wrap">
+                    <img class="img__img" src="./games_figure/splatoon3.jpg" alt="Splatoon3" width = 350px>
+                    <div class="img__description">
+                        <p>
+                            Splatoon3 <br>
+                            Rating: 5/5<br>
+                            <br>
+                            Third person shooting game, and the only deficiency is you will spend a lot of time on it.<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mix green">
+                <div class="img__wrap">
+                    <img class="img__img" src="./games_figure/hogwarts.jpg" alt="Splatoon3" width = 350px>
+                    <div class="img__description">
+                        <p>
+                            Hogwarts Legacy <br>
+                            Rating: 3.5/5<br>
+                            <br>
+                            Nice recreation of Hogwarts, but kind of boring for its storyline. <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="mixitup.min.js"></script>
+
+        <script>
+            var containerEl = document.querySelector('.container');
+
+            var mixer = mixitup(containerEl);
+        </script>
+    </main>
+
+    <footer>
+      <p>University of Michigan School of Information <br/>
+        &copy; Huiyu Su - Web Design 2023</p>
+    </footer>
+  </body>
+</html>
